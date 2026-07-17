@@ -1,0 +1,16 @@
+matrix1 = [[1,2,3],[4,5,6],[7,8,9]]
+matrix2 = [[9,8,7],[6,5,4],[3,2,1]]
+
+addanswer = [[0,0,0],[0,0,0],[0,0,0]]
+subanswer = [[0,0,0],[0,0,0],[0,0,0]]
+mulanswer = [[0,0,0],[0,0,0],[0,0,0]]
+
+for r in range(len(matrix1)):
+     for c in range(len(matrix1[0])):
+          addanswer[r][c] = matrix1[r][c] + matrix2[r][c]
+          subanswer[r][c] = matrix1[r][c] - matrix2[r][c]
+          mulanswer[r][c] = matrix1[r][c] * matrix2[r][c]
+
+print("Addition result: ",addanswer)
+print("Subtraction result: ",subanswer)
+print("Multiplication result: ",mulanswer)
